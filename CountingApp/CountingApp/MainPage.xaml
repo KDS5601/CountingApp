@@ -1,14 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:CountingApp"
              x:Class="CountingApp.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center">
+            <Button
+                x:Name="CountDown"
+                BackgroundColor="Azure"
+                Text="카운트다운"
+                FontSize="Large"/>
+            <Button
+                x:Name="CountUp"
+                BackgroundColor="Azure"
+                Text="카운트 업"
+                FontSize="Large"/>
+            <Label
+                x:Name="CountingLabel"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                FontSize="Large"/>
+            <Button
+                x:Name="Reset"
+                BackgroundColor="Azure"
+                Text="초기화"
+                FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
