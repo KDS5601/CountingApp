@@ -6,16 +6,13 @@
         <StackLayout
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
-            VerticalOptions="Center">
-            <Button
-                x:Name="CountDown"
-                BackgroundColor="Azure"
-                Text="카운트다운"
-                FontSize="Large"/>
+            VerticalOptions="FillAndExpand">
             <Button
                 x:Name="CountUp"
-                BackgroundColor="Azure"
-                Text="카운트 업"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="WhiteSmoke"
+                Text="Up"
                 FontSize="Large"/>
             <Label
                 x:Name="CountingLabel"
@@ -24,7 +21,15 @@
                 Text="0"
                 FontSize="Large"/>
             <Button
+                x:Name="CountDown"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="WhiteSmoke"
+                Text="Down"
+                FontSize="Large"/>
+            <Button
                 x:Name="Reset"
+                HorizontalOptions="FillAndExpand"
                 BackgroundColor="Azure"
                 Text="초기화"
                 FontSize="Large"/>
